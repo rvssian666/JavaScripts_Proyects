@@ -11,7 +11,7 @@
   width: 100%;
 }
 #welcome {
-  background-color: #fcb53b;
+  background-color: #b99a6f;
 }
 #welcome-LiliExpress {
   font-size: 4rem;
@@ -26,4 +26,5 @@
   background-position: center center;
   min-height: 800px;
   width: 100%;
+  height: auto;
 }

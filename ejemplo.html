@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style_ejemplo.css" />
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
-    <title>Probando los estilos con Bootstrap 5</title>
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-md navbar-dark bg-dark "
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand " href="#">LILIEXPRESS</a>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuPrincipal"
-            aria-controls="menuPrincipal"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_ejemplo.css" />
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+  <title>LiliExpress </title>
+</head>
 
-          <dic class="collapse navbar-collapse " id="menuPrincipal">
-            <ul class="navbar-nav mx-auto ">
-              <li class="nav- item ps-2 pe-2 ">
-                <a class="nav-link" href="#">Inicio</a>
-              </li>
-              <li class="nav- item ps-2 pe-2">
-                <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav- item ps-2 pe-2">
-                <a class="nav-link" href="#">Inspiration</a>
-              </li>
-            </ul>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#">LILIEXPRESS</a>
 
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <dic class="collapse navbar-collapse " id="menuPrincipal">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav- item ps-2 pe-2 ">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav- item ps-2 pe-2">
+              <a class="nav-link" href="#">Inspiration</a>
+            </li>
+            <li class="nav- item ps-2 pe-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+            <button class="btn btn-outline-warning" type="submit">
+              Buscar
+            </button>
+          </form>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="presentation-image">
+      <div class="front-img">
+      </div>
+
+    </section>
+    <section id="welcome">
+      <div class="container-fluid align-content-center" id="welcome-div">
+        <div class="row justify-content-between me-5">
+          <div class="col-12 text-center col-md-10 " id="welcome-LiliExpress">Welcome to LiliExpress</div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-12 text-center fon col-md-6 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+            delectus maiores quam at repellat qui adipisci facilis odio distinctio accusantium laudantium vel
+            blanditiis, magni molestiae commodi, iste perferendis incidunt possimus.
+
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-        <section id="presentation-image">
-            <div class="front-img">
-            </div>
+      </div>
+    </section>
+    <section id="work-with-best">
+      <div class="worker d-inline-flex ">
+        <a href="#"
+          class="justify-content-end align-content-end ms-auto fs-3 me-5 pe-5 mb-5 text-light text-decoration-none "> We
+          work with the best</a>
+      </div>
+    </section>
+    <section id="pround-proyect">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 "></div>
+          <div class="col-12 col-md-6 col-lg-4"></div>
+          <div class="col-12 col-md-6 col-lg-4"></div>
+        </div>
+      </div>
+    </section>
 
-        </section>
-        <section id="welcome">
-          <div class="container-fluid align-content-center" id="welcome-div">
-            <div class="row justify-content-center me-5">
-              <div class="col-12 text-center col-md-10 " id="welcome-LiliExpress">Welcome to LiliExpress</div>
-            </div>
-            <div class="row justify-content-end">
-              <div class="col-12 text-center fon col-md-6 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic delectus maiores quam at repellat qui adipisci facilis odio distinctio accusantium laudantium vel blanditiis, magni molestiae commodi, iste perferendis incidunt possimus.
+  </main>
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
 
-              </div>
-            </div>
-          </div>  
-        </section>
-        <section id="work-with-best">
-          <div class="worker">
-
-          </div>
-        </section>
-
-    </main>
-    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
-  </body>
 </html>
