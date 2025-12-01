@@ -4,7 +4,7 @@
   font-size: 2rem !important;
 }
 .front-img {
-  background-image: url("photos/0ve6v2.jpg");
+  background-image: url("photos/presentacion!!.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 800px;
@@ -27,4 +27,13 @@
   min-height: 800px;
   width: 100%;
   height: auto;
+}
+#container-pround-proyect {
+  background-color: #b99a6f;
+  min-height: 800px;
+}
+.photos:hover {
+  touch-action: auto;
+  border:2px solid white;
+  border-radius: 1rem;
 }
