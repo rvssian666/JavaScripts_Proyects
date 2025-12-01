@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap");
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem !important;
+}
+.front-img {
+  background-image: url("photos/0ve6v2.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 800px;
+  width: 100%;
+}
+#welcome-LiliExpress {
+  font-size: 3rem;
+}
+#welcome-div {
+  min-height: 800px;
+}
