@@ -10,9 +10,20 @@
   min-height: 800px;
   width: 100%;
 }
+#welcome {
+  background-color: #fcb53b;
+}
 #welcome-LiliExpress {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 #welcome-div {
   min-height: 800px;
+}
+
+.worker {
+  background-image: url(photos/withTheBest.jpeg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 800px;
+  width: 100%;
 }
