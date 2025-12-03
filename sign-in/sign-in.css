@@ -3,6 +3,27 @@ body {
   height: 100%;
 }
 
+/* Estilos para el fondo animado */
+.fondo-oscuro-animado {
+    /* Combinación de colores oscuros para el degradado */
+    background: linear-gradient(-45deg, #0A1931, #12002f, #212121, #1d003a);
+    background-size: 400% 400%;
+    /* Aplica la animación */
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .form-signin {
   max-width: 330px;
   padding: 1rem;

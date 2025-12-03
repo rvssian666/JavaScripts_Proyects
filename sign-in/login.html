@@ -9,7 +9,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Astro v5.13.2" />
-    <title>Signin Template </title>
+    <title>Signin sesion </title>
     <link rel="stylesheet" href="sign-in.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -89,7 +89,7 @@
       }
     </style>
   </head>
-  <body class="d-flex align-items-center py-4 bg-body-tertiary ">
+  <body class="d-flex align-items-center py-4 bg-dark fondo-oscuro-animado">
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
@@ -187,14 +187,8 @@
     </div>
     <main class="form-signin w-100 m-auto">
       <form>
-        <img
-          class="mb-4"
-          src="../assets/brand/bootstrap-logo.svg"
-          alt=""
-          width="72"
-          height="57"
-        />
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <i class="bi bi-fingerprint d-flex fs-1 text-light justify-content-center"></i>
+        <h1 class="d-flex justify-content-center text-light mb-4">Please Sign in</h1>
         <div class="form-floating">
           <input
             type="email"
@@ -220,14 +214,14 @@
             value="remember-me"
             id="checkDefault"
           />
-          <label class="form-check-label" for="checkDefault">
+          <label class="form-check-label text-light" for="checkDefault">
             Remember me
           </label>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit">
           Sign in
         </button>
-        <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2025</p>
+        <p class="mt-5 mb-3 text-light">&copy;LiliExpress|🛒 2025</p>
       </form>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
