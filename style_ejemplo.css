@@ -37,3 +37,24 @@
   border:2px solid white;
   border-radius: 1rem;
 }
+#form-section{
+  display: grid;
+  grid-template-areas: "img form";
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  background-color: #b99a6f;
+  border-top: 1px solid black;
+  
+}
+#img-form{
+  background-image: url("photos/6666f698a10249e7f2a164a0_Piso compartido energia.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 600px;
+  width: 100%;
+  grid-area: img;
+}
+#form{
+  grid-area: form;
+  padding: 1em;
+}
