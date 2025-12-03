@@ -51,13 +51,14 @@
 
 /* 2. Define el comportamiento al pasar el ratón (hover)
 */
-.list-group-item-warning:hover i {
+.bi-person-fill:hover  {
     /* El icono cambiará al color Warning de Bootstrap */
     color: var(--bs-warning) !important; 
     transform: scale(2.1);
     /* Nota sobre !important:
-Es posible que necesites !important si Bootstrap está aplicando 
-    un color de texto muy específico a los elementos <a> o <i>.
-Si el cambio no se refleja, añádelo; si sí se refleja, omítelo.
-    */
+*/
+}
+.bi-cart4:hover{
+  color: var(--bs-warning)!important;
+  
 }
