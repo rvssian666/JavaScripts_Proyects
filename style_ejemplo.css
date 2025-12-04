@@ -13,12 +13,31 @@
 }
 #welcome {
   background-color: #b99a6f;
+  animation: salirDePantalla 2s ease-in-out forwards;
 }
 #welcome-LiliExpress {
   font-size: 4rem;
 }
+.exit-3d {
+  transform-style: preserve-3d; 
+    /* Aplicar la animación de movimiento */
+    animation: salirDePantalla 5s ease-out forwards;
+}
 #welcome-div {
   min-height: 800px;
+  perspective: 900px; /* Establecer la perspectiva */
+    perspective-origin: center center;
+}
+@keyframes salirDePantalla {
+  0% {
+    /* Estado inicial: El div está en el plano normal */
+    transform: translateZ(0);
+  }
+  100% {
+    /* Estado final: El div se mueve 200px hacia el espectador */
+    transform: translateZ(140px); 
+  
+  }
 }
 
 .worker {
