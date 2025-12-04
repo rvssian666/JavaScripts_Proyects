@@ -8,6 +8,7 @@
   <meta name="keyword" content="HTML,CSS, Bootstrap, JavaScript, Recat">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style_ejemplo.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" /> -->
@@ -24,8 +25,7 @@
           aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <dic class="collapse navbar-collapse " id="menuPrincipal">
+        <div class="collapse navbar-collapse " id="menuPrincipal">
           <ul class="navbar-nav mx-auto ">
             <li class="nav- item ps-2 pe-2 ">
               <a class="nav-link" href="#">Products</a>
@@ -45,12 +45,17 @@
             </button>
           </form>
       </div>
+      <a href="sign-in/login.html" class="list-group-item-warning mx-auto">
+        <i class="bi bi-person-fill fs-1 me-3 "></i>
+        <i class="bi bi-cart4 fs-1 me-3"></i>
+      </a>
       </div>
     </nav>
   </header>
   <main>
     <section id="presentation-image">
       <div class="front-img">
+        
       </div>
 
     </section>
@@ -82,68 +87,99 @@
           <div class="col-12 col-md-6 col-lg-4  mb-3">
             <div class="photos h-80 d-flex flex-column  ratio ratio-1x1 border-5-dark overflow-hidden">
               <img src="photos/kam-idris-_HqHX3LBN18-unsplash.jpg" class="img-fluid" alt="imagen1">
+              <div class="overlay-text">Project Info</div>
             </div>
           </div>
           <div class="col-12  col-md-6 col-lg-4 mb-3">
             <div class="photos h-80 d-flex flex-column ratio ratio-1x1 border-5-dark overflow-hidden">
               <img src="photos/spacejoy-YI2YkyaREHk-unsplash.jpg" class="img-fluid" alt="imagen1">
+              <div class="overlay-text">Espacio tranquilo</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3">
             <div class="photos h-80 d-flex flex-column ratio ratio-1x1 border-5-dark overflow-hidden">
               <img src="photos/0ve6v2.jpg" class="img-fluid" alt="imagen1">
+              <div class="overlay-text">Kit de cocina comedor</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3">
             <div class="photos h-80 d-flex flex-column ratio ratio-1x1 border-5-dark overflow-hidden">
               <img src="photos/ali-moradi-Erg07pIM_ac-unsplash.jpg" class="img-fluid" alt="imagen1">
+              <div class="overlay-text">Comedor moderno</div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3">
             <div class="photos h-80 d-flex flex-column ratio ratio-1x1 border-5-dark overflow-hidden">
               <img src="photos/croissant-matzZGQk4o4-unsplash.jpg" class="img-fluid" alt="imagen1">
+              <div class="overlay-text">Salón </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4 mb-3">
             <div class="photos h-80 d-flex flex-column ratio ratio-1x1 border-5-dark overflow-hidden">
               <img src="photos/spacejoy-GNs831kqdoM-unsplash.jpg" class="img-fluid" alt="imagen1">
+              <div class="overlay-text">Project Info</div>
             </div>
           </div>
           </div>
           </section>
-          <!-- <section id="appoiment">
-            <div class="d-flex flex-colum">
-              
-            </div>
-    </section> -->
     <section id="form-section">
       <div id="img-form"></div>
+
       <div id="form">
-        <div></div>
-        <h2>Make an appoinment</h2> 
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-group">
-          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Preference</label>
-          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-            <option selected>Choose...</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+        <h2 class="mb-4">Make an appointment</h2>
+
+        <form>
+
+
+          <div class="form-group mb-3">
+            <label for="inputAddress">Nombre</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
           </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+          <div class="form-group mb-3">
+            <label for="inputAddress2">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="inlineFormCustomSelectPref">Preference</label>
+            <select class="custom-select" id="inlineFormCustomSelectPref">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            Enviar
+          </button>
+        </form>
       </div>
     </section>
+    <footer id="main-footer" class="d-flex align-items-center">
+      <div class="footer-content">
+        <p class="footer-text">Contáctanos</p>
+
+        <div class="footer-icons">
+          <a href="mailto:example@email.com" class="footer-icon" target="_blank">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+
+          <a href="#" class="footer-icon" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+
+          <a href="#" class="footer-icon" target="_blank">
+            <i class="bi bi-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
